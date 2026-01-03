@@ -1,0 +1,10 @@
+__pycache__
+bin
+fine_tuned_sentinel
+lib
+lib64
+sentinel_model_v1
+share
+pyvenv.cfg
+*.conf
+*.pyc
