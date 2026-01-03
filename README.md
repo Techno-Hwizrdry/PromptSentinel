@@ -6,14 +6,15 @@ A Python library and defensive tool designed to detect prompt injection attacks 
 
 This library requires Python version 3.12.3+.  To run the demo tool (`main.py`), you will also need to install virtualenv.  The prerequisites can be installed on a Debian based linux machine, like so:
 
-`sudo apt-get install python3.12 python3-pip python3.12-dev && sudo pip3 install virtualenv`
+```bash
+sudo apt-get install python3.12 python3-pip python3.12-dev && sudo pip3 install virtualenv
+```
 
 ## Setup
 
 Once those prerequisites have been installed, git clone this repo, cd into it, and set up the virtual environment:
 ```bash
-cd /path/to/promptsentinel
-./setup_virtualenv.sh
+cd /path/to/promptsentinel && ./setup_virtualenv.sh
 ```
 
 `setup_virtualenv.sh` will set `promptsentinel` as the virtual environment, activate it, and call pip3 to download and install all the python3 dependencies for this script. These dependencies are listed in `requirements.txt`.
@@ -81,9 +82,9 @@ python3 scripts/benchmark_latency.py
 ## Algorithms & Models
 DistilBERT (Fine-Tuned)
 
-Base: distilbert-base-uncased
-Task: Sequence Classification (Binary: Malicious vs. Benign)
-Optimization: FP16 Mixed Precision training for 2x speedup on Tensor Cores.
+- **Base:** distilbert-base-uncased
+- **Task:** Sequence Classification (Binary: Malicious vs. Benign)
+- **Optimization:** FP16 Mixed Precision training for 2x speedup on Tensor Cores.
 
 ## Data Sources
 
