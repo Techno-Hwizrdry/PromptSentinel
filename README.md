@@ -30,7 +30,7 @@ python3 train.py
 
 **Note:** This will create the `./fine_tuned_sentinel` directory containing your optimized model weights.
 
-## Running
+## Usage
 
 For more details regarding CLI options
 
