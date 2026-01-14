@@ -2,6 +2,8 @@
 
 A Python library and defensive tool designed to detect prompt injection attacks using fine-tuned transformer models. PromptSentinel acts as a security middleware to sanitize user inputs before they reach an LLM.
 
+**NOTE:** For best performance, run this code on a CUDA enabled GPU.  Otherwise, it will default to running on your CPU.
+
 ## Prerequisites
 
 This library requires Python version 3.12.3+.  To run the demo tool (`main.py`), you will also need to install virtualenv.  The prerequisites can be installed on a Debian based linux machine, like so:
