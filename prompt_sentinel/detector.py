@@ -15,7 +15,7 @@ class PromptSentinel:
         """
         Returns the best available device (CUDA for GPU or CPU).
         """
-        return torch.device("cuda" if torch.cuda.is_available() else "cup")
+        return torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     def scan(self, user_text: str,
              threat_threshold: float = 0.7) -> Dict[str, Union[str, float, bool]]:
